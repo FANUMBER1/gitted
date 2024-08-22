@@ -1,0 +1,85 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:1@localhost:5432/baitap/mydb?schema=public"
+}
+model profile1{
+  id Int @id @default(autoincrement())
+  ten String
+  sdt String
+  congviec String
+  hinhnen String
+  daidien String
+  thongtin1 String
+  thongtin2 String
+  gmail String
+}
+
+model education{
+  id Int @id @default(autoincrement())
+  nam String
+  bangcap String
+  daihoc String
+  diachi String
+  thongtin String
+}
+
+model skills{
+  id Int @id @default(autoincrement())
+  ten String
+  phantram Int
+}
+
+model experience{
+  id Int @id @default(autoincrement())
+  nam String
+  vitricv String
+  tencongty String
+  diachi String
+  mota String
+}
+
+model profile2{ 
+  id Int @id @default(autoincrement())
+  tenweb String
+  icon String
+  link String
+}
+
+model client{
+  id Int @id @default(autoincrement())
+  ten String
+  logo String
+}
+ model duan{
+  tid Int @id @default(autoincrement())
+  ten String
+  hinhanh String
+ }
+
+model contact{
+id Int @id @default(autoincrement())
+ten String
+email String
+tieude String
+loinhan String
+}
+
+ model soicial{
+  id Int @id @default(autoincrement())
+  ten String
+  link String
+  logo String
+ }
+
+ model taikhoan{
+  id Int @id @default(autoincrement())
+  tentaikhoan String
+  pass String
+}
