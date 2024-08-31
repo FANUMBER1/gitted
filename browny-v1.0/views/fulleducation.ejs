@@ -38,14 +38,14 @@
     <div class="row justify-content-center">
         <div class="col-5 border border-dark rounded p-3 ">
            <div class="row mb-5">
-            <h6 class="col-6">Tên bằng: </h6> <h6 class="col-6"><%= data[0].bangcap %></h6>
-            <h6 class="col-6">Năm cấp bằng: </h6> <h6 class="col-6"><%= data[0].nam %></h6>
-            <h6 class="col-6">Đại học: </h6> <h6 class="col-6"><%= data[0].daihoc %></h6>
-            <h6 class="col-6">Địa chỉ trường: </h6> <h6 class="col-6"><%= data[0].diachi %></h6>
+            <h6 class="col-6">Tên bằng: </h6> <h6 class="col-6"><%= data.bangcap %></h6>
+            <h6 class="col-6">Năm cấp bằng: </h6> <h6 class="col-6"><%= data.nam %></h6>
+            <h6 class="col-6">Đại học: </h6> <h6 class="col-6"><%= data.daihoc %></h6>
+            <h6 class="col-6">Địa chỉ trường: </h6> <h6 class="col-6"><%= data.diachi %></h6>
             <div class="form-group">
               <label for="email"><h6>Thông tin: </h6></label>
-              <textarea type="text" class="form-control" id="email"><%= data[0].thongtin %></textarea>
-          </div>            <button type="button" class="btn btn-default btn-dark mt-2 mb-2 " ><a href="/admin/edit-education/<%=data[0].id %>" class="nav-link text-white" > Chỉnh sửa </a></button>
+              <textarea type="text" class="form-control" id="email"><%= data.thongtin %></textarea>
+          </div>            <button type="button" class="btn btn-default btn-dark mt-2 mb-2 " ><a href="/admin/edit-education/<%=data.id %>" class="nav-link text-white" > Chỉnh sửa </a></button>
             <button type="button" class="btn btn-dark btn-default " ><a href="/admin/education" class="nav-link text-white" >QUAY VỀ </a></button>
        </div>
        </div> 

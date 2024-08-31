@@ -37,29 +37,29 @@
     <div class="row text-center">
       <h1>EDIT PROFILE USER </h1> 
     </div>
-    <form action="/admin/edit-education/<%= data[0].id %>" method="post">
+    <form action="/admin/edit-education/<%= data.id %>" method="post">
     <div class="row justify-content-center">
         <div class="col-5 border border-dark rounded p-3 ">
            <div class="row mb-5 overflow-hidden ">
               <div class="form-group">
                  <label>Tene bằng </label>
-                 <input type="text" class="form-control" id="email" value="<%= data[0].bangcap %>" name="bangcap">
+                 <input type="text" class="form-control" id="email" value="<%= data.bangcap %>" name="bangcap">
               </div>
               <div class="form-group">
                  <label>Năm cấp bằng</label>
-                 <input type="text" class="form-control" id="email" value="<%= data[0].nam %>" name="nam">
+                 <input type="text" class="form-control" id="email" value="<%= data.nam %>" name="nam">
               </div>            
               <div class="form-group">
                 <label>Đại học</label>
-                <input type="text" class="form-control" id="email" value="<%= data[0].daihoc %>" name="daihoc">
+                <input type="text" class="form-control" id="email" value="<%= data.daihoc %>" name="daihoc">
               </div>              
               <div class="form-group">
                 <label>Địa chỉ</label>
-                <input type="text" class="form-control" id="email" value="<%= data[0].diachi %>" name="diachi">
+                <input type="text" class="form-control" id="email" value="<%= data.diachi %>" name="diachi">
               </div>            
               <div class="form-group">
                 <label>Thông tin </label>
-                <textarea type="text" class="form-control" id="email" name="thongtin"><%= data[0].thongtin %></textarea>
+                <textarea type="text" class="form-control" id="email" name="thongtin"><%= data.thongtin %></textarea>
               </div>
                <button type="submit" class="btn btn-default btn-dark mt-2 mb-2 " >UPDATE</button>
                <button type="button" class="btn btn-dark btn-default " ><a href="/admin/education" class="nav-link text-white" >RETURN</a></button>

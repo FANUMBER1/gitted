@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 module.exports={
     taikhoan: async () => {
-        const data= await prisma.$queryRaw`select * from "taikhoan"`;
+        const data= await prisma.taikhoan.findMany();
        return data;
     },
     createadmin:async(taikhoan,pass)=>{

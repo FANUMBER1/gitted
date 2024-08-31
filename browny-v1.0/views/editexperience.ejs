@@ -37,29 +37,29 @@
     <div class="row text-center">
       <h1>EDIT INFORMATION EXPERIENCE </h1> 
     </div>
-    <form action="/admin/edit-experience/<%= data[0].id %>" method="post">
+    <form action="/admin/edit-experience/<%= data.id %>" method="post">
     <div class="row justify-content-center">
         <div class="col-5 border border-dark rounded p-3 ">
            <div class="row mb-5 overflow-hidden ">
               <div class="form-group">
                  <label>Vị trí công việc </label>
-                 <input type="text" class="form-control" id="email" value="<%= data[0].vitricv %>" name="vitricv">
+                 <input type="text" class="form-control" id="email" value="<%= data.vitricv %>" name="vitricv">
               </div>
               <div class="form-group">
                  <label>Tên công ty</label>
-                 <input type="text" class="form-control" id="email" value="<%= data[0].tencongty %>" name="tencongty">
+                 <input type="text" class="form-control" id="email" value="<%= data.tencongty %>" name="tencongty">
               </div>            
               <div class="form-group">
                 <label>Năm làm việc</label>
-                <input type="text" class="form-control" id="email" value="<%= data[0].nam %>" name="nam">
+                <input type="text" class="form-control" id="email" value="<%= data.nam %>" name="nam">
               </div>              
               <div class="form-group">
                 <label>Địa chỉ</label>
-                <input type="text" class="form-control" id="email" value="<%= data[0].diachi %>" name="diachi">
+                <input type="text" class="form-control" id="email" value="<%= data.diachi %>" name="diachi">
               </div>            
               <div class="form-group">
                 <label>Mô tả công việc </label>
-                <textarea type="text" class="form-control" id="email" name="mota"><%= data[0].mota %></textarea>
+                <textarea type="text" class="form-control" id="email" name="mota"><%= data.mota %></textarea>
               </div>
                <button type="submit" class="btn btn-default btn-dark mt-2 mb-2 " >UPDATE</button>
                <button type="button" class="btn btn-dark btn-default " ><a href="/admin/experience" class="nav-link text-white" >RETURN</a></button>

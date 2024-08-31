@@ -37,12 +37,12 @@
     <div class="row justify-content-center">
         <div class="col-5 border border-dark rounded p-3 ">
            <div class="row mb-5">
-            <h6 class="col-6">Họ và Tên: </h6><h6 class="col-6"><%= data[0].ten %></h6>
-            <h6 class="col-6">Email: </h6> <h6 class="col-6"><%= data[0].email %></h6>
-            <h6 class="col-6">Tiêu đề: </h6> <h6 class="col-6"><%= data[0].tieude %></h6>
+            <h6 class="col-6">Họ và Tên: </h6><h6 class="col-6"><%= data.ten %></h6>
+            <h6 class="col-6">Email: </h6> <h6 class="col-6"><%= data.email %></h6>
+            <h6 class="col-6">Tiêu đề: </h6> <h6 class="col-6"><%= data.tieude %></h6>
             <div class="form-group">
               <label for="email"><h6>Nội dung tin nhắn:</h6></label>
-              <textarea type="text" class="form-control" id="email"><%= data[0].loinhan %></textarea>
+              <textarea type="text" class="form-control" id="email"><%= data.loinhan %></textarea>
           </div>
                 <button type="submit" class="btn btn-dark btn-ms"><a href="/admin/contact" class="nav-link text-white" >Thoát</a></button>          
           </div>
